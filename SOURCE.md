@@ -1,6 +1,6 @@
 # JVDA release source
 
-This is the sanitized source snapshot for JVDA 0.1.1. The private development repository produced it from commit `0601fbb7ec1a077746a38e84fffc35e8824616f4`.
+This is the sanitized source snapshot for JVDA 0.1.2. The private development repository produced it from commit `faab4c11a9dbb6ca71e24f51c5964789bbffab45`.
 
 Build the add-on with:
 

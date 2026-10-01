@@ -1,6 +1,6 @@
 # JVDA release notes
 
-## 0.1.1
+## 0.1.2
 
 Initial public release.
 
