@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>JVDA $version Release Notes</title></head>
+<body>
+<h1>JVDA release notes</h1>
+<h2>Version $version</h2>
+<p>Initial public release.</p>
+<h3>Highlights</h3>
+<ul>
+<li>JAWS-style PC, JAWS, Invisible, Touch, and Object Navigation cursor commands.</li>
+<li>Desktop and Laptop layouts, cursor routing and restrictions, mouse commands, window and tray lists, tables, and web navigation equivalents.</li>
+<li>JAWS-oriented Input Help, context help, command compatibility search, and a first-run welcome message.</li>
+<li>Configurable speech and presentation behavior, including concise reverse-heading navigation for applications such as Discord.</li>
+<li>Default-on suppression of NVDA modifier-key double-tap pass-through, with an immediately applied setting to restore it.</li>
+<li>JAWS-compatible classic Winamp reports for track title and details, elapsed and remaining time, and total length.</li>
+<li>Layered JAWSKey+Space commands, on by default: a basic layer, a volume layer and a table layer, with question mark listing the open layer's keys. Only the sublayers JVDA can run are offered; a JAWS layer with no NVDA equivalent reports "command invalid" instead of opening. NVDA+Space opens the layer instead of toggling browse and focus mode; JAWSKey+Z still does that.</li>
+<li>An optional JAWS-only keyboard, off by default, which blocks NVDA's own NVDA-modified commands and reports "unavailable jaws command". JAWSKey+grave, JAWSKey+F4, JAWSKey+N and JAWSKey+1 always keep working.</li>
+</ul>
+<h3>Compatibility</h3>
+<p>Requires NVDA 2026.1 or later and is tested through NVDA 2026.2.0.</p>
+<h3>Known limitations</h3>
+<p>Application accessibility providers determine which text and objects JVDA can navigate. JVDA provides practical NVDA equivalents and does not implement the JAWS scripting runtime or every JAWS command.</p>
+<p>NVDA's Input Help cannot describe the keys inside a JAWSKey+Space layer, because JVDA dispatches them itself. The speech history, notification history, system volume, viewer, OCR, mouse echo, Picture Smart, Face in View, Skype and factory-default commands and layers are not implemented and report "command invalid".</p>
+</body>
+</html>

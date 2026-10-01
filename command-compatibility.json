@@ -1,0 +1,800 @@
+[
+  {
+    "jawsGesture": "JAWSKey+Apostrophe",
+    "jawsCommand": "RoutePCCursorToJAWS",
+    "status": "exact",
+    "jvdaGesture": "kb(laptop):NVDA+'",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+Z",
+    "jawsCommand": "VirtualPCCursorToggle",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+z",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "Shift+NumPadPlus",
+    "jawsCommand": "TouchCursor",
+    "status": "exact",
+    "jvdaGesture": "kb:shift+numpadPlus",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "Alt+Delete",
+    "jawsCommand": "SayActiveCursor",
+    "status": "exact",
+    "jvdaGesture": "kb:alt+delete",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "Control+JAWSKey+Shift+C",
+    "jawsCommand": "SayCursorType",
+    "status": "exact",
+    "jvdaGesture": "kb:control+shift+NVDA+c",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+Delete",
+    "jawsCommand": "RouteVirtualToPc",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+delete",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "Control+JAWSKey+Delete",
+    "jawsCommand": "RoutePCToVirtual",
+    "status": "exact",
+    "jvdaGesture": "kb:control+NVDA+delete",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+R",
+    "jawsCommand": "RestrictCurrentCursor",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+r",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+F10",
+    "jawsCommand": "StartJAWSTaskList",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+f10",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+F11",
+    "jawsCommand": "ListTaskTrayIcons",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+f11",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+A",
+    "jawsCommand": "SayAll",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+a",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+UpArrow",
+    "jawsCommand": "SayLine",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+upArrow",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+DownArrow",
+    "jawsCommand": "SayAll",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+downArrow",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+B",
+    "jawsCommand": "ReadBoxInTabOrder",
+    "status": "approximation",
+    "jvdaGesture": "kb:NVDA+b",
+    "reason": "JVDA provides the closest practical behavior through NVDA APIs."
+  },
+  {
+    "jawsGesture": "JAWSKey+Shift+A",
+    "jawsCommand": "SaySelectedText",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+shift+a",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Shift+Y",
+    "jawsCommand": "SayTopLineOfWindow",
+    "status": "equivalent",
+    "jvdaGesture": "kb(laptop):NVDA+shift+y",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Shift+N",
+    "jawsCommand": "SayBottomLineOfWindow",
+    "status": "equivalent",
+    "jvdaGesture": "kb(laptop):NVDA+shift+n",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Shift+J",
+    "jawsCommand": "SayToCursor",
+    "status": "equivalent",
+    "jvdaGesture": "kb(laptop):NVDA+shift+j",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Shift+L",
+    "jawsCommand": "SayFromCursor",
+    "status": "equivalent",
+    "jvdaGesture": "kb(laptop):NVDA+shift+l",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Shift+B",
+    "jawsCommand": "SayBatteryLevel",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+shift+b",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "Shift+JAWSKey+V",
+    "jawsCommand": "VirtualizeCurrentControl",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+shift+v",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Shift+,",
+    "jawsCommand": "SayCurrentAccessKey",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+shift+,",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Tab",
+    "jawsCommand": "SayWindowPromptAndText",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+tab",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+T",
+    "jawsCommand": "SayWindowTitle",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+t",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+C",
+    "jawsCommand": "ReadWordInContext",
+    "status": "approximation",
+    "jvdaGesture": "kb:NVDA+c",
+    "reason": "JVDA provides the closest practical behavior through NVDA APIs."
+  },
+  {
+    "jawsGesture": "JAWSKey+E",
+    "jawsCommand": "SayDefaultButton",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+e",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+F",
+    "jawsCommand": "SayFont",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+f",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "Control+JAWSKey+F",
+    "jawsCommand": "JAWSFind",
+    "status": "equivalent",
+    "jvdaGesture": "kb:control+NVDA+f",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+F3",
+    "jawsCommand": "JAWSFindNext",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+f3",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Shift+F3",
+    "jawsCommand": "JAWSFindPrior",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+shift+f3",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+5",
+    "jawsCommand": "SayColor",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+5",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+2",
+    "jawsCommand": "SetTypingEcho",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+2",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+3",
+    "jawsCommand": "PassKeyThrough",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+3",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "Control+JAWSKey+N",
+    "jawsCommand": "QuickNavigationKeysSuspendOrResume",
+    "status": "exact",
+    "jvdaGesture": "kb:control+NVDA+n",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+4",
+    "jawsCommand": "VKSelect",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+4",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+D",
+    "jawsCommand": "DictionaryManager",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+d",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+V",
+    "jawsCommand": "QuickSettings",
+    "status": "approximation",
+    "jvdaGesture": "kb:NVDA+v",
+    "reason": "JVDA opens NVDA Configuration Profiles as the practical application-specific settings equivalent."
+  },
+  {
+    "jawsGesture": "JAWSKey+W",
+    "jawsCommand": "WindowKeysHelp",
+    "status": "unavailable",
+    "jvdaGesture": "kb:NVDA+w",
+    "reason": "JVDA reports that this JAWS-specific facility is unavailable."
+  },
+  {
+    "jawsGesture": "JAWSKey+Q",
+    "jawsCommand": "ScriptFileName",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+q",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+S",
+    "jawsCommand": "SetScreenEcho",
+    "status": "unavailable",
+    "jvdaGesture": "kb:NVDA+s",
+    "reason": "JVDA reports that this JAWS-specific facility is unavailable."
+  },
+  {
+    "jawsGesture": "JAWSKey+G",
+    "jawsCommand": "UILabeler",
+    "status": "unavailable",
+    "jvdaGesture": "kb:NVDA+g",
+    "reason": "JVDA reports that this JAWS-specific facility is unavailable."
+  },
+  {
+    "jawsGesture": "Control+Shift+JAWSKey+J",
+    "jawsCommand": "JAWSWindow",
+    "status": "unavailable",
+    "jvdaGesture": "kb:control+shift+NVDA+j",
+    "reason": "JVDA reports that this JAWS-specific facility is unavailable."
+  },
+  {
+    "jawsGesture": "JAWSKey+F1",
+    "jawsCommand": "ScreenSensitiveHelp",
+    "status": "approximation",
+    "jvdaGesture": "kb:NVDA+f1",
+    "reason": "JVDA reports focused-control details and practical navigation help through NVDA APIs."
+  },
+  {
+    "jawsGesture": "JAWSKey+F2",
+    "jawsCommand": "RunJAWSManager",
+    "status": "unavailable",
+    "jvdaGesture": "kb:NVDA+f2",
+    "reason": "JVDA reports that this JAWS-specific facility is unavailable."
+  },
+  {
+    "jawsGesture": "JAWSKey+7",
+    "jawsCommand": "WindowClassReassign",
+    "status": "unavailable",
+    "jvdaGesture": "kb:NVDA+7",
+    "reason": "JVDA reports that this JAWS-specific facility is unavailable."
+  },
+  {
+    "jawsGesture": "JAWSKey+0",
+    "jawsCommand": "ScriptManager",
+    "status": "unavailable",
+    "jvdaGesture": "kb:NVDA+0",
+    "reason": "JVDA reports that this JAWS-specific facility is unavailable."
+  },
+  {
+    "jawsGesture": "JAWSKey+F4",
+    "jawsCommand": "ShutDownJAWS",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+f4",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+F5",
+    "jawsCommand": "SelectAFormField",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+f5",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+F6",
+    "jawsCommand": "SelectAHeading",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+f6",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+F7",
+    "jawsCommand": "SelectALink",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+f7",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "Control+JAWSKey+b",
+    "jawsCommand": "SelectAButtonFormField",
+    "status": "equivalent",
+    "jvdaGesture": "kb:control+NVDA+b",
+    "reason": "JVDA opens NVDA's corresponding Elements List category."
+  },
+  {
+    "jawsGesture": "Control+JAWSKey+r",
+    "jawsCommand": "SelectaRegion",
+    "status": "equivalent",
+    "jvdaGesture": "kb:control+NVDA+r",
+    "reason": "JVDA lists NVDA landmarks as the practical equivalent of JAWS regions."
+  },
+  {
+    "jawsGesture": "JAWSKey+F9",
+    "jawsCommand": "SelectAFrame",
+    "status": "unavailable",
+    "jvdaGesture": "kb:NVDA+f9",
+    "reason": "JVDA reports that this JAWS-specific facility is unavailable."
+  },
+  {
+    "jawsGesture": "JAWSKey+6",
+    "jawsCommand": "SettingsCenter",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+6",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+F12",
+    "jawsCommand": "SaySystemTime",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+f12",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "Control+JAWSKey+F12",
+    "jawsCommand": "SaySystemTimeWithSeconds",
+    "status": "equivalent",
+    "jvdaGesture": "kb:control+NVDA+f12",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Escape",
+    "jawsCommand": "RefreshScreen",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+escape",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+X",
+    "jawsCommand": "SayFrameAtCursor",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+x",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Control+U",
+    "jawsCommand": "SayPriorParagraph",
+    "status": "equivalent",
+    "jvdaGesture": "kb(laptop):control+NVDA+u",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Control+I",
+    "jawsCommand": "SayParagraph",
+    "status": "equivalent",
+    "jvdaGesture": "kb(laptop):control+NVDA+i",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Control+O",
+    "jawsCommand": "SayNextParagraph",
+    "status": "equivalent",
+    "jvdaGesture": "kb(laptop):control+NVDA+o",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+8",
+    "jawsCommand": "LeftMouseButton",
+    "status": "exact",
+    "jvdaGesture": "kb(laptop):NVDA+8",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+9",
+    "jawsCommand": "RightMouseButton",
+    "status": "exact",
+    "jvdaGesture": "kb(laptop):NVDA+9",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "Shift+JAWSKey+8",
+    "jawsCommand": "DragAndDrop",
+    "status": "exact",
+    "jvdaGesture": "kb(laptop):NVDA+shift+8",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "Control+Windows+8",
+    "jawsCommand": "LeftMouseButtonLock",
+    "status": "exact",
+    "jvdaGesture": "kb:control+windows+8",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "Control+Windows+9",
+    "jawsCommand": "RightMouseButtonLock",
+    "status": "exact",
+    "jvdaGesture": "kb:control+windows+9",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "Alt+Shift+UpArrow",
+    "jawsCommand": "MouseUp",
+    "status": "exact",
+    "jvdaGesture": "kb:alt+shift+upArrow",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "Alt+Shift+DownArrow",
+    "jawsCommand": "MouseDown",
+    "status": "exact",
+    "jvdaGesture": "kb:alt+shift+downArrow",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "Alt+Shift+LeftArrow",
+    "jawsCommand": "MouseLeft",
+    "status": "exact",
+    "jvdaGesture": "kb:alt+shift+leftArrow",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "Alt+Shift+RightArrow",
+    "jawsCommand": "MouseRight",
+    "status": "exact",
+    "jvdaGesture": "kb:alt+shift+rightArrow",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "Alt+Control+Home",
+    "jawsCommand": "FirstCellInTable",
+    "status": "exact",
+    "jvdaGesture": "kb:alt+control+home",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "Alt+Control+End",
+    "jawsCommand": "LastCellInTable",
+    "status": "exact",
+    "jvdaGesture": "kb:alt+control+end",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "T",
+    "jawsCommand": "MoveToNextTable",
+    "status": "exact",
+    "jvdaGesture": "kb:t",
+    "reason": "JVDA implements this JAWS quick key when the optional web mappings are enabled."
+  },
+  {
+    "jawsGesture": "Shift+T",
+    "jawsCommand": "MoveToPriorTable",
+    "status": "exact",
+    "jvdaGesture": "kb:shift+t",
+    "reason": "JVDA implements this JAWS reverse quick key when the optional web mappings are enabled."
+  },
+  {
+    "jawsGesture": "Control+Windows+k",
+    "jawsCommand": "DefineATempPlaceMarker",
+    "status": "exact",
+    "jvdaGesture": "kb:control+windows+k",
+    "reason": "JVDA stores a session-only marker without writing persistent data."
+  },
+  {
+    "jawsGesture": "k",
+    "jawsCommand": "MoveToNextPlaceMarker",
+    "status": "approximation",
+    "jvdaGesture": "kb:k",
+    "reason": "JVDA returns to its single session-only marker when optional JAWS web quick keys are enabled."
+  },
+  {
+    "jawsGesture": "Shift+k",
+    "jawsCommand": "MoveToPriorPlaceMarker",
+    "status": "approximation",
+    "jvdaGesture": "kb:shift+k",
+    "reason": "JVDA returns to its single session-only marker when optional JAWS web quick keys are enabled."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&Shift+Slash",
+    "jawsCommand": "BasicLayerHelp",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+space, shift+/",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&J",
+    "jawsCommand": "LaunchCommandsSearch",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, j",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&L",
+    "jawsCommand": "LockKeyboard",
+    "status": "approximation",
+    "jvdaGesture": "kb:NVDA+space, l",
+    "reason": "JVDA toggles its own keyboard interception, the closest NVDA analogue of locking the screen reader's keyboard."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&s",
+    "jawsCommand": "MuteSynthesizer",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, s",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&F11",
+    "jawsCommand": "ScreenShadeToggle",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, f11",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&Shift+s",
+    "jawsCommand": "SpeechOnDemandToggle",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, shift+s",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&D",
+    "jawsCommand": "ToggleAudioDucking",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, d",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&C",
+    "jawsCommand": "ViewClipboardText",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+space, c",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&T&DownArrow*",
+    "jawsCommand": "DownCell",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, t, downArrow",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&T&Control+Home*",
+    "jawsCommand": "FirstCellInTable",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, t, control+home",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&T&Control+End*",
+    "jawsCommand": "LastCellInTable",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, t, control+end",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&T&Control+DownArrow*",
+    "jawsCommand": "MoveToBottomOfColumn",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, t, control+downArrow",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&T&End*",
+    "jawsCommand": "MoveToEndOfRow",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, t, end",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&T&Home*",
+    "jawsCommand": "MoveToStartOfRow",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, t, home",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&T&Control+UpArrow*",
+    "jawsCommand": "MoveToTopOfColumn",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, t, control+upArrow",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&T&RightArrow*",
+    "jawsCommand": "NextCell",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, t, rightArrow",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&T&LeftArrow*",
+    "jawsCommand": "PriorCell",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, t, leftArrow",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&T&Shift+Comma*",
+    "jawsCommand": "ReadCurrentColumn",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, t, shift+,",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&T&Shift+UpArrow*",
+    "jawsCommand": "ReadCurrentRow",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, t, shift+upArrow",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&T&Shift+PageUp*",
+    "jawsCommand": "ReadFromCurrentCell",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, t, shift+pageUp",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&T&Shift+PageDown*",
+    "jawsCommand": "ReadToBottomOfColumn",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, t, shift+pageDown",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&T&Comma*",
+    "jawsCommand": "SayCell",
+    "status": "approximation",
+    "jvdaGesture": "kb:NVDA+space, t, ,",
+    "reason": "JVDA reports the cell through the active cursor rather than JAWS's own cell reader."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&T&Shift+Slash",
+    "jawsCommand": "TableLayerHelp",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+space, t, shift+/",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&T&UpArrow*",
+    "jawsCommand": "UpCell",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, t, upArrow",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&V&Shift+Slash",
+    "jawsCommand": "VolumesLayerHelp",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+space, v, shift+/",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&V&B&UpArrow",
+    "jawsCommand": "RestoreSoundBalance",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, v, b, upArrow",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&V&B&LeftArrow",
+    "jawsCommand": "RouteJAWSSoundLeft",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, v, b, leftArrow",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&V&B&RightArrow",
+    "jawsCommand": "RouteJAWSSoundRight",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, v, b, rightArrow",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&V&B&Shift+Slash",
+    "jawsCommand": "SoundBalanceHelp",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+space, v, b, shift+/",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&V&J&PageDown*",
+    "jawsCommand": "JAWSVolumeDownLarge",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+space, v, j, pageDown",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&V&J&DownArrow*",
+    "jawsCommand": "JAWSVolumeDownSmall",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+space, v, j, downArrow",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&V&J&Shift+Slash",
+    "jawsCommand": "JAWSVolumeLayerHelp",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+space, v, j, shift+/",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&V&J&PageUp*",
+    "jawsCommand": "JAWSVolumeUpLarge",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+space, v, j, pageUp",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&V&J&RightArrow*",
+    "jawsCommand": "JAWSVolumeUpSmall",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+space, v, j, rightArrow",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&V&C&DownArrow*",
+    "jawsCommand": "SelectNextSoundCard",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, v, c, downArrow",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&V&C&UpArrow*",
+    "jawsCommand": "SelectPreviousSoundCard",
+    "status": "equivalent",
+    "jvdaGesture": "kb:NVDA+space, v, c, upArrow",
+    "reason": "JVDA delegates to the corresponding NVDA command or dialog."
+  },
+  {
+    "jawsGesture": "JAWSKey+Space&V&C&Shift+Slash",
+    "jawsCommand": "SoundCardsHelp",
+    "status": "exact",
+    "jvdaGesture": "kb:NVDA+space, v, c, shift+/",
+    "reason": "JVDA implements the JAWS command behavior directly."
+  }
+]

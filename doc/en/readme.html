@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JVDA 0.1.1 User Guide</title>
+<style>
+body { font-family: sans-serif; line-height: 1.5; max-width: 70em; margin: 2em auto; padding: 0 1em; }
+kbd { border: 1px solid #777; border-radius: .2em; padding: 0 .2em; }
+table { border-collapse: collapse; }
+th, td { border: 1px solid #777; padding: .35em; text-align: left; vertical-align: top; }
+</style>
+</head>
+<body>
+<h1>JVDA 0.1.1 User Guide</h1>
+<p>JVDA adds JAWS-style cursor, navigation, and presentation commands to NVDA. JAWS is not required.</p>
+
+<nav aria-label="Contents">
+<h2>Contents</h2>
+<ul>
+<li><a href="#quick-start">Quick start</a></li>
+<li><a href="#cursors">Cursors and routing</a></li>
+<li><a href="#web">Web browsing</a></li>
+<li><a href="#layers">Layered JAWSKey+Space commands</a></li>
+<li><a href="#settings">Settings</a></li>
+<li><a href="#winamp">Classic Winamp</a></li>
+<li><a href="#help">Finding commands</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+<li><a href="#limitations">Known limitations</a></li>
+<li><a href="#support">Support</a></li>
+<li><a href="#install">Installation and removal</a></li>
+<li><a href="#accessibility">Accessibility and privacy</a></li>
+</ul>
+</nav>
+
+<h2 id="quick-start">Quick start</h2>
+<ul>
+<li>Press <kbd>Numpad Minus</kbd> for the JAWS Cursor. Press it again quickly for the independent Invisible Cursor.</li>
+<li>Press <kbd>Numpad Plus</kbd> to return to the PC Cursor.</li>
+<li>On Laptop layout, use <kbd>NVDA+P</kbd> for the JAWS Cursor and <kbd>NVDA+Semicolon</kbd> for the PC Cursor.</li>
+<li>Press <kbd>NVDA+`</kbd> to disable every JVDA keyboard command. The same command remains available to turn JVDA commands back on.</li>
+<li>Press <kbd>Ctrl+Shift+NVDA+F2</kbd> for the searchable command compatibility list.</li>
+<li>Press <kbd>NVDA+1</kbd> for JAWS-oriented Input Help.</li>
+</ul>
+
+<h2 id="cursors">Cursors and routing</h2>
+<p>The JAWS Cursor reviews screen text and can move the mouse. The Invisible Cursor keeps an independent review position and never moves the physical mouse. Shift+Numpad Plus activates Touch Cursor traversal. Windows+NVDA+Minus activates Object Navigation.</p>
+<p>NVDA+Numpad Minus moves the JAWS or Invisible Cursor to the PC Cursor. NVDA+Numpad Plus routes the PC Cursor to the review cursor and returns to PC mode. NVDA+R cycles cursor restrictions. The JAWS Cursor remains independent of PC focus and caret changes by default; optional tethering is available in settings.</p>
+
+<h2 id="web">Web browsing</h2>
+<p>NVDA Browse Mode is the JAWS Virtual Cursor equivalent. Focus Mode is the JAWS PC Cursor or Forms Mode equivalent. Use <kbd>NVDA+Z</kbd> to switch modes.</p>
+<ul>
+<li>Use H or Shift+H for headings, T or Shift+T for tables, F or Shift+F for form controls, and K or Shift+K for links.</li>
+<li>By default, JVDA makes Shift+H speak only the destination heading rather than ancestor heading text exposed by applications such as Discord.</li>
+<li>Press Enter or Space to interact with a control. Press Escape or NVDA+Z to return to Browse Mode.</li>
+<li>Optional JAWS quick-key overrides add JAWS-compatible meanings for A, O, Z, and the temporary PlaceMarker commands.</li>
+</ul>
+
+<h2 id="layers">Layered JAWSKey+Space commands</h2>
+<p>Press JAWSKey+Space, then one more key, the way JAWS layers work. Two rising tones mean the layer is open. The basic layer closes after one command. Some keys open a sublayer instead, and a sublayer stays open so that its keys can be pressed repeatedly. Escape, Space, Tab, Enter, two seconds without a key press, moving the mouse, or changing window all close the layer.</p>
+<p>Two falling tones mean the layer has closed with nothing else to say, after Escape or a timeout. A command that speaks its result, or opens a window, plays no tone: hearing “Audio ducking on” already tells you the layer has ended.</p>
+<p>In the basic layer, C shows the clipboard text, D turns audio ducking on or off, F11 or Print Screen turns the screen shade on or off, J opens the command compatibility list, L turns JVDA's keyboard commands off or on, S mutes or unmutes speech, and Shift+S switches speech on demand on or off. V opens the volume layer and T opens the table layer.</p>
+<p>In the volume layer, J adjusts the synthesizer volume, B sets the sound balance between NVDA and other applications, and C moves through the audio output devices. In the table layer, the arrow keys move a cell at a time and the layer stays open until it is closed.</p>
+<p>JVDA offers only the sublayers it can actually run. JAWS's braille and text viewer, mouse echo, Face in View, OCR, Picture Smart and Skype layers, and the volume layer's system volume sublayer, report “command invalid” when their key is pressed. They do not open, because a layer in which every key answered “command invalid” would tell the user nothing.</p>
+<p>Press question mark inside any layer to list that layer's keys. A key with a JAWS command JVDA cannot provide reports “command invalid”; a key with no JAWS command reports “command unassigned”. Both end the layer. NVDA's Input Help cannot describe layer keys, because JVDA dispatches them itself.</p>
+<p>The layer takes NVDA+Space, which is NVDA's own browse and focus mode toggle. JAWSKey+Z does the same job and is the JAWS command for it. Unchecking “JAWSKey+Space layer commands” in JVDA settings gives NVDA+Space back at once.</p>
+
+<h2 id="settings">Settings</h2>
+<p>Open NVDA menu, Preferences, Settings, JVDA. The panel controls repeated-symbol limits, mouse movement, JAWS-to-PC tethering, NVDA modifier double-taps, CapsLock double-tap, blank-line handling, table coordinate speech, autocomplete and status announcements, Alt+Tab position speech, list-view separators, previous-heading speech, optional JAWS web quick keys, the JAWSKey+Space layer, the JAWS-only keyboard, and debug logging.</p>
+<p>“Ignore NVDA's own key commands (JAWS-only keyboard)” is off by default. When it is on, an NVDA-modified key JVDA has not given a JAWS command to is blocked and JVDA says “unavailable jaws command” instead of letting NVDA answer it. Ordinary typing and Control, Alt, Shift and Windows commands are untouched. JAWSKey+grave, JAWSKey+F4, JAWSKey+N and JAWSKey+1 always keep working, so NVDA is always reachable.</p>
+<p>By default, JVDA prevents a rapid double-tap of CapsLock, Numpad Insert, or dedicated Insert from passing the bare key to the focused application. Uncheck “Prevent NVDA modifier keys from passing through on double-tap” to restore NVDA's native behavior. The separate CapsLock option continues to provide JAWS-style CapsLock toggling.</p>
+<p>Options explicitly labelled “requires restart” take effect after NVDA restarts. Other options, including modifier double-tap suppression, the JAWSKey+Space layer and the JAWS-only keyboard, apply immediately.</p>
+
+<h2 id="winamp">Classic Winamp</h2>
+<p>When focus is in classic Winamp, JVDA provides these JAWS-compatible reports:</p>
+<table>
+<thead><tr><th>Command</th><th>Report</th></tr></thead>
+<tbody>
+<tr><td>Alt+Shift+T</td><td>Elapsed time</td></tr>
+<tr><td>Control+Shift+T</td><td>Remaining time</td></tr>
+<tr><td>Control+NVDA+T</td><td>Total track length</td></tr>
+<tr><td>Alt+Control+T</td><td>Current track title</td></tr>
+<tr><td>Shift+NVDA+T</td><td>Title, length, sample rate, bit rate, and channel count</td></tr>
+</tbody>
+</table>
+<p>Live streams may not expose a total length. This support targets Winamp's classic “Winamp v1.x” window and preserves NVDA's playlist, shuffle, and repeat support.</p>
+
+<h2 id="help">Finding commands</h2>
+<ul>
+<li><kbd>NVDA+1</kbd>: JAWS-oriented Input Help.</li>
+<li>Desktop <kbd>NVDA+H</kbd>: Hot Key Help.</li>
+<li><kbd>NVDA+F1</kbd>: context help for the focused control.</li>
+<li><kbd>Ctrl+Shift+NVDA+F2</kbd>: searchable JAWS-to-JVDA command compatibility.</li>
+<li><a href="../../commands.md">Complete Desktop and Laptop command tables</a>.</li>
+<li><a href="changes.html">Release notes</a>.</li>
+</ul>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+<dl>
+<dt>JVDA keys interfere with an application</dt>
+<dd>Press NVDA+` to disable JVDA keyboard commands. Press it again to restore them.</dd>
+<dt>Arrow keys do not edit or move the caret</dt>
+<dd>Press Numpad Plus to return to the PC Cursor. Laptop users can press NVDA+Semicolon.</dd>
+<dt>Letters type instead of navigating a web page</dt>
+<dd>Press Escape or NVDA+Z to enter Browse Mode. Use Focus Mode when an interactive web application needs unmodified letters.</dd>
+<dt>A changed setting does not work</dt>
+<dd>Restart NVDA if the setting is labelled “requires restart.”</dd>
+<dt>A command still fails</dt>
+<dd>Confirm NVDA's Desktop or Laptop layout, check Num Lock and numpad availability, and test with other add-ons disabled. Restart NVDA with add-ons disabled if necessary.</dd>
+</dl>
+
+<h2 id="limitations">Known limitations</h2>
+<ul>
+<li>Application accessibility providers determine which text, objects, headings, and tables are available. Results can differ in browsers, PDFs, Discord, terminals, and custom controls.</li>
+<li>JVDA provides practical NVDA equivalents for many JAWS commands. It is not a JAWS scripting runtime and does not implement every JAWS feature.</li>
+<li>Some commands intentionally remain native NVDA commands. The searchable compatibility list identifies equivalent, approximate, and unavailable mappings.</li>
+<li>JVDA requires NVDA 2026.1 or later and has been tested through NVDA 2026.2.0.</li>
+</ul>
+
+<h2 id="support">Support</h2>
+<p>Email <a href="mailto:help@effortlessvi.com?subject=JVDA%20support%20request">help@effortlessvi.com</a>. Include:</p>
+<ul>
+<li>JVDA, NVDA, and Windows versions;</li>
+<li>the affected application and browser, if applicable;</li>
+<li>exact keystrokes and steps to reproduce the problem;</li>
+<li>what you expected and what NVDA spoke; and</li>
+<li>whether it occurs with other add-ons disabled.</li>
+</ul>
+<p><kbd>Ctrl+Shift+NVDA+F1</kbd> displays non-sensitive JVDA cursor diagnostics without document text. Review diagnostics and NVDA logs before sharing them because environmental or third-party information may still be present. JVDA never sends support information automatically.</p>
+
+<h2 id="install">Installation and removal</h2>
+<p>Install the .nvda-addon package through NVDA's Add-on Store. Restart NVDA when prompted. To temporarily stop JVDA without changing its installation, press NVDA+`. To disable, enable, update, or remove JVDA, open NVDA menu, Tools, Add-on Store, Installed add-ons.</p>
+<p>If NVDA becomes unusable, choose NVDA menu, Tools, Restart with add-ons disabled.</p>
+
+<h2 id="accessibility">Accessibility and privacy</h2>
+<p>JVDA dialogs and settings use standard keyboard-accessible NVDA and wxPython controls with labels, keyboard focus, and standard Close or Escape behavior. Report an inaccessible workflow to <a href="mailto:help@effortlessvi.com">help@effortlessvi.com</a>.</p>
+<p>JVDA does not transmit telemetry, support requests, diagnostics, or logs. Debug logging is optional and disabled by default.</p>
+
+<h2>License and trademarks</h2>
+<p>JVDA is licensed under the GNU General Public License version 2 or later. JAWS is a trademark of Freedom Scientific. JVDA is an independent project and is not affiliated with or endorsed by Freedom Scientific. Visit <a href="https://effortlessvi.com">effortlessvi.com</a> for project information.</p>
+</body>
+</html>
